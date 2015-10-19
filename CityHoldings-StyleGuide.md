@@ -1,6 +1,6 @@
 # NYTimes Objective-C Style Guide with adaptation for City Holdings
 
-This style guide outlines the coding conventions of the iOS teams at The New York Times (Adapted for City Holdings). We welcome your feedback in [issues](https://github.com/NYTimes/objetive-c-style-guide/issues), [pull requests](https://github.com/NYTimes/objetive-c-style-guide/pulls) and [tweets](https://twitter.com/nytimesmobile). Also, [we’re hiring](http://jobs.nytco.com/job/New-York-iOS-Developer-Job-NY-10001/73366300/).
+This style guide outlines the coding conventions of the iOS teams at The New York Times (Adapted for City Holdings). We welcome your feedback in [issues](https://github.com/NYTimes/objetive-c-style-guide/issues), 
 
 Thanks to all of [our contributors](https://github.com/NYTimes/objective-c-style-guide/contributors).
 
@@ -46,9 +46,11 @@ Here are some of the documents from Apple that informed the style guide. If some
 
 **For Example**
 
-const NSInteger XYZErrorAlertViewTag = 1;
+This is for an example only! We will never use the tag property of views.
 
 ```
+const NSInteger XYZErrorAlertViewTag = 1;
+
 alertView.tag = XYZErrorAlertViewTag;
 ```
 
