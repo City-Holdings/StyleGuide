@@ -46,10 +46,10 @@ Here are some of the documents from Apple that informed the style guide. If some
 
 **For Example**
 
-const NSInteger kErrorAlertViewTag = 1;
+const NSInteger XYZErrorAlertViewTag = 1;
 
 ```
-alertView.tag = kErrorAlertViewTag;
+alertView.tag = XYZErrorAlertViewTag;
 ```
 
 **Not**
