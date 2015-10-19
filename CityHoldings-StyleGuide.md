@@ -373,7 +373,8 @@ Block comments should generally be avoided, as code should be as self-documentin
 `init` methods should be structured like this:
 
 ```objc
-- (instancetype)init {
+- (instancetype)init 
+{
     self = [super init]; // or call the designated initializer
     if (self) {
         // Custom initialization
@@ -460,7 +461,8 @@ When using `enum`s, use the new fixed underlying type specification, which provi
 **Example:**
 
 ```objc
-typedef NS_ENUM(NSInteger, NYTAdRequestState) {
+typedef NS_ENUM(NSInteger, NYTAdRequestState) 
+{
     NYTAdRequestStateInactive,
     NYTAdRequestStateLoading
 };
@@ -473,7 +475,8 @@ When working with bitmasks, use the `NS_OPTIONS` macro.
 **Example:**
 
 ```objc
-typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
+typedef NS_OPTIONS(NSUInteger, NYTAdCategory) 
+{
     NYTAdCategoryAutos      = 1 << 0,
     NYTAdCategoryJobs       = 1 << 1,
     NYTAdCategoryRealState  = 1 << 2,
@@ -554,7 +557,8 @@ _Text and example taken from the [Cocoa Naming Guidelines](https://developer.app
 
 Singleton objects should use a thread-safe pattern for creating their shared instance.
 ```objc
-+ (instancetype)sharedInstance {
++ (instancetype)sharedInstance 
+{
     static id sharedInstance = nil;
 
     static dispatch_once_t onceToken;
