@@ -235,6 +235,19 @@ Variables should be named descriptively, with the variable’s name clearly comm
 * `NSURL *URL` vs. `NSString *URLString`: In situations when a value can reasonably be represented by different classes, it is often useful to disambiguate in the variable’s name.
 * `NSString *releaseDateString`: Another example where a value could be represented by another class, and the name can help disambiguate.
 
+Variable delclaration should be one variable per line.
+
+**For example,** 
+```
+NSString *title;
+NSString *messageBody;
+```
+
+**Not**
+```
+NSString *title, *messageBody;
+```
+
 Single letter variable names should be avoided except as simple counter variables in loops.
 
 Asterisks indicating a type is a pointer should be “attached to” the variable name. Except in the case of constants (`NSString * const NYTConstantString`).
